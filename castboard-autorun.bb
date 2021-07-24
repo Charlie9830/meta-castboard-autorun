@@ -1,4 +1,4 @@
-DESCRIPTON = "Castboard SystemD autorun script"
+DESCRIPTON = "Castboard Systemd autorun script"
 LICENSE = "CLOSED"
 PR = "r0"
 
