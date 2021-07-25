@@ -2,7 +2,7 @@ DESCRIPTON = "Castboard Systemd autorun script"
 LICENSE = "CLOSED"
 PR = "r0"
 
-CB_SCRIPTS_REV = "3cc90547bad02830086f121f12f9ff5a99e2a647"
+CB_SCRIPTS_REV = "b3fc48c3254be1d35f933244ee5e4d9571b36f74"
 
 SRC_URI = "git://github.com/Charlie9830/castboard_scripts.git;protocol=https;rev=${CB_SCRIPTS_REV};destsuffix=git;branch=master;" 
 
