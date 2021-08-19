@@ -1,0 +1,10 @@
+[Unit]
+Description=Castboard player exectuable
+
+[Service]
+ExecStartPre=/bin/sleep 5
+ExecStart=/usr/share/castboard-player/player
+
+[Install]
+Alias=castboard
+WantedBy=multi-user.target
