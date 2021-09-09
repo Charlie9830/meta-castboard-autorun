@@ -2,8 +2,6 @@ DESCRIPTON = "Castboard Systemd autorun script"
 LICENSE = "CLOSED"
 PR = "r0"
 
-CB_SCRIPTS_REV = "b3fc48c3254be1d35f933244ee5e4d9571b36f74"
-
 SRC_URI = "file://castboard_start.service" 
 
 S = "${WORKDIR}"
