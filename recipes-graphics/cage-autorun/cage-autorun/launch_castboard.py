@@ -35,7 +35,7 @@ for line in Lines:
 # If subprocess.call has empty args, it freaks out cage. So if we have no -r args to provide, we have to make sure
 # we don't leave an empty string in the args paramter.
 if cageArgs == "":
-    subprocess.call(["/usr/bin/cage"], "/usr/share/castboard-player/player")
+    subprocess.call(["/usr/bin/cage", "/usr/share/castboard-player/player"])
 else:
     subprocess.call(["/usr/bin/cage", cageArgs, "/usr/share/castboard-player/player"])
 
