@@ -1,5 +1,5 @@
 [Unit]
-Description=Cage Wayland compositor on %I running Castboard-player
+Description=Cage Wayland compositor on %I running Castboard Performer
 After=systemd-user-sessions.service plymouth-quit-wait.service
 Before=graphical.target
 ConditionPathExists=/dev/tty0
@@ -11,7 +11,7 @@ After=getty@%i.service
 [Service]
 Type=simple
 Environment=WLR_LIBINPUT_NO_DEVICES=1
-ExecStart=/usr/bin/python3 /usr/bin/launch_castboard.py /usr/share/castboard-player/player /etc/castboard/castboard.conf
+ExecStart=/usr/bin/python3 /usr/bin/launch_castboard.py /usr/share/castboard-performer/performer /etc/castboard/castboard.conf
 StandardOutput=journal+console
 StandardOutput=journal+console
 StandardError=journal+console

@@ -7,7 +7,7 @@ import sys
 # Finally it runs cage with those arguments (if any) and points it to Castboard.
 
 # Command Input arguments
-playerLocation = sys.argv[1]
+performerLocation = sys.argv[1] # TODO: You never actually use this.
 confLocation = sys.argv[2]
 
 def extractValue(input):
@@ -35,9 +35,9 @@ for line in Lines:
 # If subprocess.call has empty args, it freaks out cage. So if we have no -r args to provide, we have to make sure
 # we don't leave an empty string in the args paramter.
 if cageArgs == "":
-    subprocess.call(["/usr/bin/cage", "/usr/share/castboard-player/player"])
+    subprocess.call(["/usr/bin/cage", "/usr/share/castboard-performer/performer"])
 else:
-    subprocess.call(["/usr/bin/cage", cageArgs, "/usr/share/castboard-player/player"])
+    subprocess.call(["/usr/bin/cage", cageArgs, "/usr/share/castboard-performer/performer"])
 
 
 
